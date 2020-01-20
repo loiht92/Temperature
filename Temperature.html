@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let Temperature = function (doC) {
+        this.doC = doC;
+
+        this.getdoF = function () {
+            return this.doC * 1.8 + 32
+        };
+
+        this.getdoK = function () {
+            return this.doC + 273
+        };
+    };
+    let temperature = new Temperature(25);
+    let doF =temperature.getdoF();
+    let doK = temperature.getdoK();
+    document.write("DoF :" +doF +"<br>" + "doK:" +doK);
+</script>
+</body>
+</html>
